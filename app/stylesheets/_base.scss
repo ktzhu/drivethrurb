@@ -1,0 +1,27 @@
+$text_color: #000;
+$serif_font: Georgia, serif;
+$sans_font: "Arial", Arial, sans-serif;
+
+body {
+	font-size: 10px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 100%;
+}
+
+@mixin triangleDivider ($left-indent, $bottom-indent) {
+	z-index: 1000;
+	content: "";
+	border: {
+		color: $beige transparent transparent transparent;
+		style: solid;
+		width: 10.5px;
+	}
+	position: relative;
+	bottom: $bottom-indent;
+	left: $left-indent;
+	top: -4px;
+	width: 0;
+	height: 0;
+}

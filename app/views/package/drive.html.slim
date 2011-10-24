@@ -1,0 +1,16 @@
+h1 Hi, Kyle!
+h3 I see you have two minutes. Here's what's going on in the world today:
+
+h2 World
+h4 = @world_titles[0]
+= sanitize(@news_package[0])
+p
+
+h2 Sport
+h4 = @sports_titles[0]
+= sanitize(@news_package[1])
+p
+
+h2 Business
+h4 = @business_titles[0]
+= sanitize(@news_package[2])

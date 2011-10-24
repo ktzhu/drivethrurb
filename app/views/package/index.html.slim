@@ -1,18 +1,4 @@
-div data-role="page" data-theme="a" id="index"
-	.colmask
-		#mainNavBar 
-			.logo
-				= link_to 'Home', root_path, :rel => 'external'
-		
-		#featuredContent
+h1 DriveThru
+h2 Welcome, Kyle
 
-		#recentStories
-			.titleDivider Recent Stories
-		
-		ul data-role="listview" id="postList"
-			.storyWrapper
-				.storyContent
-					.title I have two minutes	
-				
-		#footerNav data-position="fixed"
-			== render :partial => "package/footer", :layout => false
+a href="/package/drive" I have two minutes

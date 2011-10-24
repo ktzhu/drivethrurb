@@ -1,0 +1,68 @@
+#footerNav * {
+	margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+#footerNav {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 43px;
+	background: black;
+	overflow: none;
+	
+	.footerContainer {
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+	}
+	
+	li {
+		width: 32%;
+		height: 43px;
+		list-style-type: none;
+		display: inline-block;
+		background: url('/images/footer_border.png') 0 0 repeat-y;
+		text-align: center;
+		a {
+			position: relative;
+			top: 16px;
+			height: 43px;
+			font: {
+				family: $sans-font;
+				size: 0.8em;
+				weight: normal;
+			}
+			color: white;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+	}
+	
+	li:first-child {
+		background: none;
+	}
+	
+	.leftTriangle,
+	.rightTriangle {
+		z-index: 1;
+		content: "";
+		border: {
+			color: $beige transparent transparent transparent;
+			style: solid;
+			width: 8.5px;
+		}
+		position: absolute;
+		width: 0;
+		height: 0;
+		margin-left: -8px;
+	}
+	.leftTriangle {
+		left: 32%;
+	}
+	
+	.rightTriangle {
+		left: 64%;
+	}
+}
