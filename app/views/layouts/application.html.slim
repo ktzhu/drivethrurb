@@ -1,0 +1,15 @@
+doctype 5
+html lang="en"
+	head
+	  meta http-equiv="Content Type" content="text/html, charset=utf-8"
+    script
+      | if (top !== self) top.location.href = self.location.href;
+    meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    title DriveThru
+    = stylesheet_link_tag 'jquerymobile-goodtheme.css'
+    = javascript_include_tag 'jquery.min.js'
+    = javascript_include_tag 'jquery.mobile-1.0b1.js'    
+    = csrf_meta_tag
+		
+	body
+		= yield
