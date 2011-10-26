@@ -56,46 +56,35 @@ body {
   #footerNav .rightTriangle {
     left: 64%; }
 
+.wrapper {
+  width: 70%;
+  margin: 0 auto; }
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.2em; }
+
 .colmask {
   clear: both;
   float: left;
   width: 100%;
   overflow: hidden; }
 
-.fullpage {
-  width: 96%;
-  left: 2%; }
-
-#variation-carousel {
-  border: none;
-  background: black;
-  width: 100%;
-  overflow: hidden;
-  position: relative; }
-
 #mainNavBar {
   clear: both;
-  float: left;
+  position: relative;
   width: 100%;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 10px;
   padding-right: -10px;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em;
   display: block;
   background: black; }
-  #mainNavBar .logo {
-    background: url(/images/good-lg.png) no-repeat;
-    height: 25px;
-    float: left;
-    overflow: hidden;
-    text-indent: -9999px;
-    display: inline;
-    width: 43.5px; }
-    #mainNavBar .logo a {
-      height: 25px;
-      display: block; }
-      #mainNavBar .logo a:hover {
-        background: url(/images/good-lg-down.png) no-repeat; }
+  #mainNavBar a {
+    color: white;
+    text-decoration: none; }
 
 .topics {
   position: absolute;
@@ -233,90 +222,103 @@ body {
     padding-left: 10px;
     padding-top: 5px;
     background: #09f;
-    height: 25px;
+    height: 16px;
     color: #fff;
     text-transform: uppercase;
     font-family: "Arial", Arial, sans-serif;
     font-weight: normal;
     font-size: 0.9em; }
 
-#postList {
+#timeList {
   list-style: none;
   display: block;
+  top: 50px;
   padding: 0;
-  float: left;
-  background: #fff; }
-  #postList .storyWrapper {
-    float: left;
+  position: relative;
+  background: white;
+  border-bottom: 1px #aaaaaa dotted;
+  height: 400px; }
+  #timeList .storyWrapper {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
     width: 100%;
-    border-top: 1px solid #aaaaaa;
     padding-top: 8px;
-    padding-bottom: 8px;
-    background: #fff; }
-    #postList .storyWrapper .storyContent {
-      padding-left: 10px; }
-      #postList .storyWrapper .storyContent .image {
+    padding-bottom: 8px; }
+    #timeList .storyWrapper .storyContent {
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      border-top: 1px dotted #aaaaaa;
+      font-family: Georgia, serif; }
+      #timeList .storyWrapper .storyContent .image {
         float: left;
         display: block; }
-      #postList .storyWrapper .storyContent .category-title {
+      #timeList .storyWrapper .storyContent .emphasize {
+        text-transform: uppercase;
+        font-weight: bold; }
+      #timeList .storyWrapper .storyContent .category-title {
         margin-left: 100px;
         font-size: 0.9em;
         font-family: "Arial", Arial, sans-serif;
         text-transform: uppercase; }
-        #postList .storyWrapper .storyContent .category-title {
+        #timeList .storyWrapper .storyContent .category-title {
           color: #73716e; }
-        #postList .storyWrapper .storyContent .category-title.action {
+        #timeList .storyWrapper .storyContent .category-title.action {
           color: #00aeef; }
-        #postList .storyWrapper .storyContent .category-title.art-and-design {
+        #timeList .storyWrapper .storyContent .category-title.art-and-design {
           color: #ff7bac; }
-        #postList .storyWrapper .storyContent .category-title.business-and-money {
+        #timeList .storyWrapper .storyContent .category-title.business-and-money {
           color: #363795; }
-        #postList .storyWrapper .storyContent .category-title.cities {
+        #timeList .storyWrapper .storyContent .category-title.cities {
           color: #b4bbbf; }
-        #postList .storyWrapper .storyContent .category-title.culture {
+        #timeList .storyWrapper .storyContent .category-title.culture {
           color: #faa85f; }
-        #postList .storyWrapper .storyContent .category-title.education {
+        #timeList .storyWrapper .storyContent .category-title.education {
           color: #ffcd67; }
-        #postList .storyWrapper .storyContent .category-title.environment {
+        #timeList .storyWrapper .storyContent .category-title.environment {
           color: #4b8044; }
-        #postList .storyWrapper .storyContent .category-title.food {
+        #timeList .storyWrapper .storyContent .category-title.food {
           color: #c657a0; }
-        #postList .storyWrapper .storyContent .category-title.health {
+        #timeList .storyWrapper .storyContent .category-title.health {
           color: #6a9ac2; }
-        #postList .storyWrapper .storyContent .category-title.media {
+        #timeList .storyWrapper .storyContent .category-title.media {
           color: #db4140; }
-        #postList .storyWrapper .storyContent .category-title.politics {
+        #timeList .storyWrapper .storyContent .category-title.politics {
           color: #001722; }
-        #postList .storyWrapper .storyContent .category-title.technology {
+        #timeList .storyWrapper .storyContent .category-title.technology {
           color: #8f807d; }
-        #postList .storyWrapper .storyContent .category-title.transportation {
+        #timeList .storyWrapper .storyContent .category-title.transportation {
           color: #ba784d; }
-      #postList .storyWrapper .storyContent .title {
+      #timeList .storyWrapper .storyContent .title {
         margin-left: 100px;
         margin-right: 10px; }
-        #postList .storyWrapper .storyContent .title a {
+        #timeList .storyWrapper .storyContent .title a {
           color: black;
           text-decoration: none;
           font-family: Georgia, serif;
           font-size: 1.3em;
           font-weight: normal; }
-      #postList .storyWrapper .storyContent .byline {
+      #timeList .storyWrapper .storyContent .byline {
         margin-left: 100px;
         text-transform: lowercase;
         color: #666666;
         font-family: "Arial", Arial, sans-serif;
         font-size: 0.9em; }
-        #postList .storyWrapper .storyContent .byline span {
+        #timeList .storyWrapper .storyContent .byline span {
           text-transform: uppercase; }
 
 #loadMore {
   background: #00a1fb;
-  width: 208px;
+  width: 180px;
   height: 38px;
-  position: relative;
+  display: inline-block;
+  /* 	position: relative; */
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
   top: -50%;
   padding-top: 5px;
   font-family: Georgia, serif;

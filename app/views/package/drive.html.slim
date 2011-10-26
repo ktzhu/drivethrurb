@@ -1,16 +1,26 @@
-h1 Hi, Kyle!
-h3 I see you have two minutes. Here's what's going on in the world today:
-
-h2 World
-h4 = @world_titles[0]
-= sanitize(@news_package[0])
-p
-
-h2 Sport
-h4 = @sports_titles[0]
-= sanitize(@news_package[1])
-p
-
-h2 Business
-h4 = @business_titles[0]
-= sanitize(@news_package[2])
+div data-role="page" data-theme="a" id="index"
+.colmask
+	#mainNavBar 
+			= link_to 'DriveThru', root_path, :rel => 'external'
+		
+	ul data-role="listview" id="timeList"
+		.storyWrapper
+			h4 World
+			.storyContent
+				h2 = @world_titles[0]
+				= sanitize(@news_package[0])
+				p
+			
+			h4 Sport
+			.storyContent
+				h2 = @sports_titles[0]
+				= sanitize(@news_package[1])
+				p
+				
+			h4 Business
+			.storyContent
+				h2 = @business_titles[0]
+				= sanitize(@news_package[2])
+				p
+				
+			a href="/" Cool, I'm done.

@@ -2,6 +2,18 @@
 @import "colors";
 @import "footer";
 
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+}
+
+h2 {
+	font: {
+		family: Georgia, serif;
+		size: 1.2em;
+	}
+}
+
 .colmask {
 	clear: both;
 	float: left;
@@ -9,22 +21,9 @@
 	overflow: hidden;
 }
 
-.fullpage {
-	width: 96%;
-	left: 2%;
-}
-
-#variation-carousel {
-	border: none;
-	background: black;
-	width: 100%;
-	overflow: hidden;
-	position: relative;
-}
-
 #mainNavBar {
 	clear: both;
-	float: left;
+	position: relative;
 	width: 100%;
 	padding: {
 		top: 7px;
@@ -33,23 +32,16 @@
 		right: -10px;
 	}
 	
+	font: {
+		family: Arial, sans-serif;
+		size: 1.2em;
+	}
+	a {
+		color: white;
+		text-decoration: none;
+	}
 	display: block;
 	background: black;
-	
-	.logo {
-		background: url(/images/good-lg.png) no-repeat;
-		height: 25px;
-		float: left;
-		overflow: hidden;
-		text-indent: -9999px;
-		display: inline;
-		a {
-			height: 25px;
-			display: block;
-			&:hover { background: url(/images/good-lg-down.png) no-repeat; }
-		}
-		width: 43.5px;
-	}
 }
 
 .topics {
@@ -238,7 +230,7 @@
 		padding-left: 10px;
 		padding-top: 5px;
 		background: #09f;
-		height: 25px;
+		height: 16px;
 		color: #fff;
 		text-transform: uppercase;
 		font: {
@@ -249,26 +241,38 @@
 	}
 }
 
-#postList {
+#timeList {
 	list-style: none;
 	display: block;
+	top: 50px;
 	padding: 0;
-	float: left;
-	background: #fff;
+	position: relative;
+	background: white;
+	border-bottom: 1px $gray-lighter dotted;
+	height: 400px;
 	.storyWrapper {
-		float: left;
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
 		width: 100%;
-		border-top: 1px solid $gray-lighter;
 		padding: {
 			top: 8px;
 			bottom: 8px;
 		}
-		background: #fff;
 		.storyContent {
-			padding-left: 10px;
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+			border-top: 1px dotted $gray-lighter;
+			font-family: Georgia, serif;
 			.image {
 				float: left;
 				display: block;
+			}
+			
+			.emphasize {
+				text-transform: uppercase;
+				font-weight: bold;
 			}
 			
 			.category-title {
@@ -313,12 +317,15 @@
 
 #loadMore {
 	background: $blue-bright;
-	width: 208px;
+	width: 180px;
 	height: 38px;
-	position: relative;
+	display: inline-block;
+/* 	position: relative; */
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
 	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
 	top: -50%;
 	padding-top: 5px;
 	a {

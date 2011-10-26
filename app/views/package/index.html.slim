@@ -1,4 +1,15 @@
-h1 DriveThru
-h2 Welcome, Kyle
-
-a href="/package/drive" I have two minutes
+div data-role="page" data-theme="a" id="index"
+.colmask
+	#mainNavBar 
+			= link_to 'DriveThru', root_path, :rel => 'external'
+	#recentStories
+		Hello, Kyle!
+	ul data-role="listview" id="timeList"
+		.storyWrapper
+			.storyContent
+				#loadMore 
+					a href="/package/drive" I have two minutes
+			.storyContent
+				#loadMore 
+					a href="/package/drive" I have five minutes
+		
