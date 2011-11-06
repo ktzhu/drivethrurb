@@ -2,6 +2,13 @@ div data-role="page" data-theme="a" id="index"
 .colmask
 	#mainNavBar 
 			= link_to 'DriveThru', root_path, :rel => 'external'
+			.categories
+				a href="#"
+				img src="images/topic_small.png"
+			.categorylist
+				li World
+				li Sport
+				li Business
 		
 	ul data-role="listview" id="timeList"
 		.storyWrapper
