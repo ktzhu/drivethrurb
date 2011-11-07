@@ -8,6 +8,14 @@ body {
 	padding: 0;
 	border: 0;
 	width: 100%;
+	background-color: #eee9f1;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(#eee9f1), to(#c9cac0));
+	background-image: -webkit-linear-gradient(left top, #eee9f1, #c9cac0);
+	background-image: -moz-linear-gradient(left top, #eee9f1, #c9cac0);
+	background-image: -o-linear-gradient(left top, #eee9f1, #c9cac0);
+	background-image: -ms-linear-gradient(left top, #eee9f1, #c9cac0);
+	background-image: linear-gradient(left top, #eee9f1, #c9cac0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eee9f1', EndColorStr='#c9cac0');
 }
 
 @mixin triangleDivider ($left-indent, $bottom-indent) {
