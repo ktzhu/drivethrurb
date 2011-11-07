@@ -56,23 +56,46 @@ body {
   #footerNav .rightTriangle {
     left: 64%; }
 
-.wrapper {
-  width: 70%;
-  margin: 0 auto; }
+.navBar {
+  z-index: -3;
+  display: block;
+  height: 33px;
+  width: 100%;
+  background: black;
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 20px; }
+
+.categories {
+  position: relative;
+  display: inline-block;
+  left: 65%;
+  text-transform: uppercase;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-right: 12px;
+  padding-bottom: 10px; }
+
+.categories li {
+  margin-top: 8px;
+  list-style-type: none;
+  display: inline-block; }
 
 h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
   font-family: "Arial", Arial, sans-serif;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  margin-bottom: 5px; }
 
 h4 {
   font-family: Georgia, serif;
-  font-size: 20px; }
+  font-size: 1.2px;
+  text-align: center; }
 
-.colmask {
-  clear: both;
-  float: left;
-  width: 100%;
-  overflow: hidden; }
-
-#mainNavBar {
-  background: black; }
+.storycontent p {
+  font-size: 14px;
+  font-family: Georgia, serif; }

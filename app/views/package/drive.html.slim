@@ -1,33 +1,36 @@
-div data-role="page" data-theme="a" id="index"
-.colmask
-	#mainNavBar 
+doctype html
+html 
+	head
+		title DriveThru | News Feed
+		div data-role="page" data-theme="a" id="index"
 			= link_to 'DriveThru', root_path, :rel => 'external'
-			.categories
-				a href="#"
-				img src="images/topic_small.png"
-			.categorylist
+	body
+		div class="navBar" 
+			div class="categories"
 				li World
 				li Sport
 				li Business
 		
-	ul data-role="listview" id="timeList"
-		.storyWrapper
-			h4 World
-			.storyContent
-				h2 = @world_titles[0]
-				= sanitize(@news_package[0])
-				p
-			
-			h4 Sport
-			.storyContent
-				h2 = @sports_titles[0]
-				= sanitize(@news_package[1])
-				p
+		div id="storyWrapper"
+				h4 World
+				div class="storyContent"
+					h2 = @world_titles[0]
+					p
+						= sanitize(@news_package[0])
+					
 				
-			h4 Business
-			.storyContent
-				h2 = @business_titles[0]
-				= sanitize(@news_package[2])
-				p
-				
-			a href="/" Cool, I'm done.
+				h4 Sport
+				div class="storyContent"
+					h2 = @sports_titles[0]
+					p
+						= sanitize(@news_package[1])
+					
+					
+				h4 Business
+				div class="storyContent"
+					h2 = @business_titles[0]
+					p
+						= sanitize(@news_package[2])
+					
+					
+				a href="/" Cool, I'm done.
