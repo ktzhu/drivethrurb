@@ -9,26 +9,11 @@ html
 
 		
 		div id="storyWrapper"
-				div class="storyContent"
-					h4 In World...
-					h2 = @world_titles[0]
-					p
-						= sanitize(@news_package[0])
-					
-				
-				div class="storyContent"
-					h4 In Sport...
-					h2 = @sports_titles[0]
-					p
-						= sanitize(@news_package[1])
-					
-					
-				div class="storyContent"
-					h4 In Business...
-					h2 = @business_titles[0]
-					p
-						= sanitize(@news_package[2])
-					
-					
+				- @articles.each do |article|
+					= sanitize("Did you know?\n")
+					h2 = article.title
+					h3 = article.abstract
+					p = GuardianContent.truncated_text(GuardianContent.extract_lede( article.url ))
+
 				div class="finish"
 						a href="/" Cool, I'm done.

@@ -56,8 +56,13 @@ class GuardianContent
 # 			puts node.text
 # 		end
 	end
+
+	def self.extract_lede( article_url )
+		doc = Nokogiri::HTML(open("#{article_url}"))
+		return doc.css('html body div#shell div#page.tabContent div#main div.spanAB div#abColumn.abColumn div#article div.columnGroup div.articleBody').text
+	end
 	
-	def self.truncated_text(max_length=300, text)
+	def self.truncated_text(max_length=500, text)
     original_text = text
     counter = 0
 
