@@ -8,28 +8,10 @@ body {
 	padding: 0;
 	border: 0;
 	width: 100%;
-	background-color: #eee9f1;
-	background-image: -webkit-gradient(linear, left top, right bottom, from(#eee9f1), to(#c9cac0));
-	background-image: -webkit-linear-gradient(left top, #eee9f1, #c9cac0);
-	background-image: -moz-linear-gradient(left top, #eee9f1, #c9cac0);
-	background-image: -o-linear-gradient(left top, #eee9f1, #c9cac0);
-	background-image: -ms-linear-gradient(left top, #eee9f1, #c9cac0);
-	background-image: linear-gradient(left top, #eee9f1, #c9cac0);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#eee9f1', EndColorStr='#c9cac0');
-}
-
-@mixin triangleDivider ($left-indent, $bottom-indent) {
-	z-index: 1000;
-	content: "";
-	border: {
-		color: $beige transparent transparent transparent;
-		style: solid;
-		width: 10.5px;
-	}
-	position: relative;
-	bottom: $bottom-indent;
-	left: $left-indent;
-	top: -4px;
-	width: 0;
-	height: 0;
+	background-color: #00e4ef;
+	background-image: -webkit-gradient(radial, 100% 100%,100,-50% -50%,100, from(#f4f4f4),to(#00e4ef));
+	background-image: -webkit-radial-gradient(0% 0%, #00e4ef, #f4f4f4);
+	background-image: -moz-radial-gradient(0% 0%, #00e4ef, #f4f4f4);
+	background-image: -ms-radial-gradient(0% 0%, #00e4ef, #f4f4f4);
+	background-image: radial-gradient(0% 0%, #00e4ef, #f4f4f4);;
 }
