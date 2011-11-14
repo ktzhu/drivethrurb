@@ -1,14 +1,14 @@
-div data-role="page" data-theme="a" id="index"
 .colmask
-	#mainNavBar 
-			= link_to 'DriveThru', root_path, :rel => 'external'
-	#recentStories Welcome Connor! May I take your order?
-	ul data-role="listview" id="timeList"
-		.storyWrapper
-			.storyContent
-				#loadMore 
-					a href="/package/drive" The Scoop
-			.storyContent
-				#loadMore 
-					a href="/package/drive10" The Works
-		
+	#mainNavBar
+		= link_to 'DriveThru', root_path, :rel => 'external'
+
+	#driveup
+		.greeting Welcome to DriveThru, Connor! May I take your order?
+		p
+		#menu Order Here:
+		.choice
+			a href="/package/drive" → The Scoop
+		= sanitize("A two-minute summary of today's news.\n\n")
+		.choice
+			a href="/package/drive10" → The Works
+		Y Your complete news digest -- world, sports, business, opinion -- all in 10 minutes.

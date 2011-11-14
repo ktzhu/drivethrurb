@@ -1,0 +1,164 @@
+// Colors
+$gray-darkest: #666;
+$gray-dark: #333;
+$gray-lightest: #c4c4c4;
+$gray-light: #00a1fb;
+$gray-lighter: #aaa;
+$beige: #e6e3dc;
+$cream: #f7f7f7;
+$blue-bright: #00a1fb;
+
+// Category Colors
+$default_category_color: mix($beige, black);
+$action_color: #00aeef;
+$art_and_design_color: #ff7bac;
+$business_and_money_color: #363795;
+$cities_color: #b4bbbf;
+$culture_color: #faa85f;
+$education_color: #ffcd67;
+$environment_color: #4b8044;
+$food_color: #c657a0;
+$health_color: #6a9ac2;
+$media_color: #db4140;
+$politics_color: #001722;
+$technology_color: #8f807d;
+$transportation_color: #ba784d;
+
+@mixin error-color {
+	background-color: #fcc;
+	color: #c00;
+}
+
+@mixin color-by-category($property, $descendants: '', $opacity: 1, $default_color: $default_category_color, $mix_color: null, $mix_weight: 50%) {
+	@if (type-of($mix_color) == color) {
+		&#{$descendants} {
+			#{$property}: mix($default_color, $mix_color, $mix_weight);
+		}
+		&.action#{$descendants} {
+			#{$property}: mix($action_color, $mix_color, $mix_weight);
+		}
+		&.art-and-design#{$descendants} {
+			#{$property}: mix($art_and_design_color, $mix_color, $mix_weight);
+		}	
+		&.business-and-money#{$descendants} {
+			#{$property}: mix($business_and_money_color, $mix_color, $mix_weight);
+		}
+		&.cities#{$descendants} {
+			#{$property}: mix($cities_color, $mix_color, $mix_weight);
+		}
+		&.culture#{$descendants} {
+			#{$property}: mix($culture_color, $mix_color, $mix_weight);
+		}
+		&.education#{$descendants} {
+			#{$property}: mix($education_color, $mix_color, $mix_weight);
+		}
+		&.environment#{$descendants} {
+			#{$property}: mix($environment_color, $mix_color, $mix_weight);
+		}
+		&.food#{$descendants} {
+			#{$property}: mix($food_color, $mix_color, $mix_weight);
+		}
+		&.health#{$descendants} {
+			#{$property}: mix($health_color, $mix_color, $mix_weight);
+		}
+		&.media#{$descendants} {
+			#{$property}: mix($media_color, $mix_color, $mix_weight);
+		}
+		&.politics#{$descendants} {
+			#{$property}: mix($politics_color, $mix_color, $mix_weight);
+		}
+		&.technology#{$descendants} {
+			#{$property}: mix($technology_color, $mix_color, $mix_weight);
+		}
+		&.transportation#{$descendants} {
+			#{$property}: mix($transportation_color, $mix_color, $mix_weight);
+		}	
+	}
+	&#{$descendants} {
+		#{$property}: rgba($default_color, $opacity);
+	}
+	&.action#{$descendants} {
+		#{$property}: rgba($action_color, $opacity);
+	}
+	&.art-and-design#{$descendants} {
+		#{$property}: rgba($art_and_design_color, $opacity);
+	}	
+	&.business-and-money#{$descendants} {
+		#{$property}: rgba($business_and_money_color, $opacity);
+	}
+	&.cities#{$descendants} {
+		#{$property}: rgba($cities_color, $opacity);
+	}
+	&.culture#{$descendants} {
+		#{$property}: rgba($culture_color, $opacity);
+	}
+	&.education#{$descendants} {
+		#{$property}: rgba($education_color, $opacity);
+	}
+	&.environment#{$descendants} {
+		#{$property}: rgba($environment_color, $opacity);
+	}
+	&.food#{$descendants} {
+		#{$property}: rgba($food_color, $opacity);
+	}
+	&.health#{$descendants} {
+		#{$property}: rgba($health_color, $opacity);
+	}
+	&.media#{$descendants} {
+		#{$property}: rgba($media_color, $opacity);
+	}
+	&.politics#{$descendants} {
+		#{$property}: rgba($politics_color, $opacity);
+	}
+	&.technology#{$descendants} {
+		#{$property}: rgba($technology_color, $opacity);
+	}
+	&.transportation#{$descendants} {
+		#{$property}: rgba($transportation_color, $opacity);
+	}
+}
+
+@mixin color-by-root-category($property, $opacity: 1, $default_color: $default_category_color) {
+	& {
+		#{$property}: $default_color;
+	}
+	.CATEGORY-action & {
+		#{$property}: $action_color;
+	}
+	.CATEGORY-art-and-design & {
+		#{$property}: $art_and_design_color;
+	}
+	.CATEGORY-business-and-money & {
+		#{$property}: $business_and_money_color;
+	}
+	.CATEGORY-cities & {
+		#{$property}: $cities_color;
+	}
+	.CATEGORY-culture & {
+		#{$property}: $culture_color;
+	}
+	.CATEGORY-education & {
+		#{$property}: $education_color;
+	}
+	.CATEGORY-environment & {
+		#{$property}: $environment_color;
+	}
+	.CATEGORY-food & {
+		#{$property}: $food_color;
+	}
+	.CATEGORY-health & {
+		#{$property}: $health_color;
+	}
+	.CATEGORY-media & {
+		#{$property}: $media_color;
+	}
+	.CATEGORY-politics & {
+		#{$property}: $politics_color;
+	}
+	.CATEGORY-technology & {
+		#{$property}: $technology_color;
+	}
+	.CATEGORY-transportation & {
+		#{$property}: $transportation_color;
+	}
+}

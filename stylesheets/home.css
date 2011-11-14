@@ -1,0 +1,71 @@
+/* line 3, ../sass/home.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 8, ../sass/home.scss */
+body {
+  font-family: Arial, sans-serif;
+  size: 10px;
+}
+
+/* line 15, ../sass/home.scss */
+.colmask {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 21, ../sass/home.scss */
+#mainNavBar {
+  display: block;
+  padding-top: 5px;
+  height: 25px;
+  background: black;
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 0.9em;
+  text-indent: 10px;
+}
+/* line 33, ../sass/home.scss */
+#mainNavBar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 39, ../sass/home.scss */
+.greeting {
+  font-family: Georgia, serif;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+/* line 47, ../sass/home.scss */
+.choice {
+  size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 48, ../sass/home.scss */
+.choice a {
+  text-decoration: none;
+  color: #c657a0;
+}
+
+/* line 57, ../sass/home.scss */
+#driveup {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* line 64, ../sass/home.scss */
+#menu {
+  display: inline;
+  text-transform: uppercase;
+  size: 1.0em;
+  text-align: center;
+  margin-bottom: 25px;
+}

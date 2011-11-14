@@ -1,0 +1,70 @@
+@import "partials/colors";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font: {
+		family: Arial, sans-serif;
+	}
+	size: 10px;
+}
+
+.colmask {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#mainNavBar {
+	display: block;
+	padding-top: 5px;
+	height: 25px;
+	background: black;
+	color: white;
+	font: {
+		family: Georgia, serif;
+		size: 0.9em;
+	}
+
+	text-indent: 10px;
+	a {
+		text-decoration: none;
+		color: white;
+	}
+}
+
+.greeting {
+	font: {
+		family: Georgia, serif;
+		size: 0.9em;
+	}
+	margin-bottom: 10px;
+}
+
+.choice {
+	a {
+		text-decoration: none;
+		color: $food_color; 
+	}
+	size: 1.2em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#driveup {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#menu {
+	display: inline;
+	text-transform: uppercase;
+	size: 1.0em;
+	text-align: center;
+	margin-bottom: 25px;
+}

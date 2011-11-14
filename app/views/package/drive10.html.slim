@@ -1,23 +1,21 @@
-doctype html
-html 
-	head
-		title DriveThru | News Feed
-		script src="/javascripts/feed.js"
-	body
-		div class="navBar" 
-			= link_to 'DriveThru', root_path, :rel => 'external'
+.colmask
+	#mainNavBar
+		= link_to 'DriveThru', root_path, :rel => 'external'
+	#feed	
+		.order The Works
+		.entree Page One Platter:
 
-		
-		div id="storyWrapper"
-			h1 The Works
-			h2 Page One Platter:
-			- @items[0..10].each do |article|
-			  h3 = "#{article.title}: #{article.abstract}"
+		- @items[0..10].each do |article|
+			.storyBlock
+				.newslist
+			  	li = "#{article.title}: #{article.abstract}"
 				
-			h2 The Meat
-			- @articles.each do |article|
-			  h3 = "#{article.section} | #{article.title}"
-			  p = GuardianContent.extract_lede( article.url )
+		.entree The Meat:
 
-		div class="finish"
-		  a href="/" Cool, I'm done.
+		- @articles.each do |article|
+			.header
+				= "#{article.section} | #{article.title}"
+			.content
+				= GuardianContent.extract_lede( article.url )
+	.finish
+		a href="/" Want to place another order?

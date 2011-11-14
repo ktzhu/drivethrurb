@@ -1,0 +1,82 @@
+@import "partials/colors";
+@import "home";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font: {
+		family: Arial, sans-serif;
+	}
+	size: 10px;
+}
+
+#feed {
+	width: 65%;
+	.entree {
+		font: {
+			weight: bold;
+			family: Georgia, serif;
+			color: $technology-color;
+		}
+	margin-bottom: 10px;
+	}
+	margin: 0 auto;
+	.order {
+		text-align: center;
+		text-indent: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font: {
+			family: Georgia, serif;
+			style: italic;
+		}
+	}
+}
+
+.storyBlock {
+	.newslist {
+		li {
+			size: 0.8em;
+		}
+	}
+	margin-bottom: 20px;
+	display: inline-block;
+	.header {
+		margin-bottom: 5px;
+		text-transform: uppercase;
+		font: {
+			weight: bold;
+		}
+		size: 1.1em;
+
+		span {
+			text-transform: none;
+			font: {
+				family: Georgia, serif;
+				size: 0.9em;
+				style: italic;
+			}
+		}
+	}
+	
+	.content {
+		size: 0.9em;
+	}
+}
+
+.finish {
+	margin-bottom: 20px;
+		a {
+			text-decoration: none;
+			color: black;
+			font: {
+				family: Georgia, serif;
+				size: 1.0em;
+				style: italic;
+			}
+		}
+	}
+
