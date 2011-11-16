@@ -59,12 +59,18 @@ body {
 	width: 50%;
 	margin: 0 auto;
 	padding-top: 20px;
+	.greeting {
+		font-style: italic;
+		font-size: 0.8em;
+		border-bottom: 0.5px dotted black;
+	}
 }
 
 #menu {
-	display: inline;
+	display: inline-block;
+	text-indent: 20px;
 	text-transform: uppercase;
-	size: 1.0em;
+	font-size: 1.3em;
 	text-align: center;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }

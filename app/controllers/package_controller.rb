@@ -16,7 +16,7 @@ class PackageController < ApplicationController
 			urls = []
 
 			@items.each do |item|
-			  if (item.item_type == "Article" && (item.section == "World" || item.section == "Business Day" || item.section == "Sports"))
+			  if (item.item_type == "Article" && (item.section == "World" || item.section == "Business Day" || item.section == "Sports" || item.section == "U.S."))
 			    @articles << item
 				urls << item.url
 			  end

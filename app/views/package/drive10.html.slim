@@ -8,14 +8,15 @@
 		- @items[0..10].each do |article|
 			.storyBlock
 				.newslist
-			  	li = "#{article.title}: #{article.abstract}"
+			  	= "#{article.title}: #{article.abstract}"
 				
 		.entree The Meat:
 
 		- @articles.each do |article|
-			.header
-				= "#{article.section} | #{article.title}"
-			.content
-				= GuardianContent.extract_lede( article.url )
+			.storyBlock
+				.header
+					= "#{article.section} | #{article.title}"
+				.content
+					= GuardianContent.extract_lede( article.url )
 	.finish
 		a href="/" Want to place another order?

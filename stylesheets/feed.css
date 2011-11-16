@@ -60,14 +60,21 @@ body {
   margin: 0 auto;
   padding-top: 20px;
 }
+/* line 62, ../sass/home.scss */
+#driveup .greeting {
+  font-style: italic;
+  font-size: 0.8em;
+  border-bottom: 0.5px dotted black;
+}
 
-/* line 64, ../sass/home.scss */
+/* line 69, ../sass/home.scss */
 #menu {
-  display: inline;
+  display: inline-block;
+  text-indent: 20px;
   text-transform: uppercase;
-  size: 1.0em;
+  font-size: 1.3em;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 /* line 4, ../sass/feed.scss */
@@ -87,14 +94,22 @@ body {
   width: 65%;
   margin: 0 auto;
 }
-/* line 18, ../sass/feed.scss */
+/* line 17, ../sass/feed.scss */
+#feed .section {
+  font-family: Arial, sans-serif;
+  color: #666666;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+  size: 0.7em;
+}
+/* line 25, ../sass/feed.scss */
 #feed .entree {
   font-weight: bold;
   font-family: Georgia, serif;
   font-color: #8f807d;
   margin-bottom: 10px;
 }
-/* line 27, ../sass/feed.scss */
+/* line 34, ../sass/feed.scss */
 #feed .order {
   text-align: center;
   text-indent: 20px;
@@ -104,39 +119,43 @@ body {
   font-style: italic;
 }
 
-/* line 39, ../sass/feed.scss */
+/* line 46, ../sass/feed.scss */
 .storyBlock {
+  border: 1px dotted #aaaaaa;
+  padding: 7px;
   margin-bottom: 20px;
   display: inline-block;
 }
-/* line 41, ../sass/feed.scss */
-.storyBlock .newslist li {
+/* line 49, ../sass/feed.scss */
+.storyBlock .newslist {
   size: 0.8em;
 }
-/* line 47, ../sass/feed.scss */
+/* line 54, ../sass/feed.scss */
 .storyBlock .header {
   margin-bottom: 5px;
   text-transform: uppercase;
   font-weight: bold;
   size: 1.1em;
 }
-/* line 55, ../sass/feed.scss */
+/* line 62, ../sass/feed.scss */
 .storyBlock .header span {
+  color: #4b8044;
+  margin-bottom: 5px;
   text-transform: none;
   font-family: Georgia, serif;
   font-size: 0.9em;
   font-style: italic;
 }
-/* line 65, ../sass/feed.scss */
+/* line 74, ../sass/feed.scss */
 .storyBlock .content {
   size: 0.9em;
 }
 
-/* line 70, ../sass/feed.scss */
+/* line 79, ../sass/feed.scss */
 .finish {
   margin-bottom: 20px;
 }
-/* line 72, ../sass/feed.scss */
+/* line 81, ../sass/feed.scss */
 .finish a {
   text-decoration: none;
   color: black;
