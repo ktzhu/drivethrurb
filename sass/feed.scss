@@ -14,13 +14,6 @@ body {
 }
 
 #feed {
-	.section {
-		font-family: Arial, sans-serif;
-		color: $gray_darkest;
-		margin-bottom: 3px;
-		text-transform: uppercase;
-		size: 0.7em;
-	}
 	width: 65%;
 	.entree {
 		font: {
@@ -44,10 +37,10 @@ body {
 }
 
 .storyBlock {
-	border: 1px dotted $gray-lighter;
-	padding: 7px;
 	.newslist {
-		size: 0.8em;
+		li {
+			size: 0.8em;
+		}
 	}
 	margin-bottom: 20px;
 	display: inline-block;
@@ -60,8 +53,6 @@ body {
 		size: 1.1em;
 
 		span {
-			color: $environment-color;
-			margin-bottom: 5px;
 			text-transform: none;
 			font: {
 				family: Georgia, serif;
