@@ -1,3 +1,5 @@
+link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'
+link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'
 .colmask
 	#mainNavBar
 		= link_to 'DriveThru', root_path, :rel => 'external'
@@ -7,8 +9,7 @@
 
 		- @items[0..10].each do |article|
 			.storyBlock
-				.newslist
-			  	li = "#{article.title}: #{article.abstract}"
+				.newslist #{article.title}: #{article.abstract}
 				
 		.entree The Meat:
 

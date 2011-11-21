@@ -1,15 +1,18 @@
 link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'
+link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'
 .colmask
 	#mainNavBar
 		= link_to 'DriveThru', root_path, :rel => 'external'
 
 	#driveup
-		.greeting Welcome to DriveThru, Connor! May I take your order?
+		.greeting Welcome to DriveThru, Connor!
 		p
-		#menu Order Here:
+		#menu May I take your order?
 		.choice
 			a href="/package/drive" → The Scoop
-		= sanitize("A two-minute summary of today's news.\n\n")
+		.des
+			|A two-minute summary of today's news.
 		.choice
 			a href="/package/drive10" → The Works
-		Y Your complete news digest -- world, sports, business, opinion -- all in 10 minutes.
+		.des
+			|Your complete news digest -- world, sports, business, opinion -- all in 10 minutes.

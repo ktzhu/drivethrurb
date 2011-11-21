@@ -6,7 +6,7 @@
 
 /* line 8, ../../sass/home.scss */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Cabin, sans-serif;
   size: 10px;
 }
 
@@ -22,10 +22,9 @@ body {
   display: block;
   padding-top: 5px;
   height: 25px;
-  background: black;
-  color: white;
-  font-family: Georgia, serif;
-  font-size: 0.9em;
+  background: #0c7ac4;
+  font-family: Lobster, cursive;
+  font-size: 1.2em;
   text-indent: 10px;
 }
 /* line 33, ../../sass/home.scss */
@@ -36,36 +35,65 @@ body {
 
 /* line 39, ../../sass/home.scss */
 .greeting {
-  font-family: Georgia, serif;
-  font-size: 0.9em;
+  font-family: Cabin, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
   margin-bottom: 10px;
 }
 
-/* line 47, ../../sass/home.scss */
-.choice {
+/* line 50, ../../sass/home.scss */
+.choice a {
+  border-top: 1px solid #96d1f8;
+  background: #0e4b73;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c7ac4), to(#0e4b73));
+  background: -webkit-linear-gradient(top, #0c7ac4, #0e4b73);
+  background: -moz-linear-gradient(top, #0c7ac4, #0e4b73);
+  background: -ms-linear-gradient(top, #0c7ac4, #0e4b73);
+  background: -o-linear-gradient(top, #0c7ac4, #0e4b73);
+  padding: 5.5px 11px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: black 0 1px 0;
+  -moz-box-shadow: black 0 1px 0;
+  box-shadow: black 0 1px 0;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  color: white;
+  font-size: 14px;
+  font-family: Lobster, cursive;
+  text-decoration: none;
+  vertical-align: middle;
+}
+/* line 72, ../../sass/home.scss */
+.choice a:hover {
+  border-top-color: #002c4a;
+  background: #002c4a;
+  color: #ccc;
+}
+
+/* line 79, ../../sass/home.scss */
+.des {
   size: 1.2em;
   margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* line 48, ../../sass/home.scss */
-.choice a {
-  text-decoration: none;
-  color: #c657a0;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-/* line 57, ../../sass/home.scss */
+/* line 86, ../../sass/home.scss */
 #driveup {
   display: block;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
-  padding-top: 20px;
+  margin-top: 20px;
+  align: center;
 }
 
-/* line 64, ../../sass/home.scss */
+/* line 94, ../../sass/home.scss */
 #menu {
-  display: inline;
-  text-transform: uppercase;
-  size: 1.0em;
+  text-transform: none;
   text-align: center;
+  font-family: Cabin, sans-serif;
+  font-size: 1.2em;
   margin-bottom: 25px;
 }
