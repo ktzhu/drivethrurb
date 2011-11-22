@@ -8,11 +8,15 @@ link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet
 		.greeting Welcome to DriveThru, Connor!
 		p
 		#menu May I take your order?
-		.choice
-			a href="/package/drive" → The Scoop
-		.des
-			|A two-minute summary of today's news.
-		.choice
-			a href="/package/drive10" → The Works
-		.des
-			|Your complete news digest -- world, sports, business, opinion -- all in 10 minutes.
+		#scoop
+			.choice
+				span = 2 
+				| min.
+				a href="/package/drive" → The Scoop
+			.des A summary of the latest news.
+		#works
+			.choice
+				span = 10
+				| min.
+				a href="/package/drive10" → The Works
+			.des Your complete news digest: world, sports, business, opinion.

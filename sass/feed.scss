@@ -11,10 +11,17 @@
 	.entree {
 		font: {
 			weight: bold;
-			family: Georgia, serif;
+			family: Cabin, sans-serif;
 			color: $technology-color;
 		}
-	margin-bottom: 10px;
+		display: block;
+		background-color: black;
+		color: white;
+		text-transform: none;
+		margin-bottom: 20px;
+		size: .7em;
+		text-indent: 5px;
+		margin-bottom: 10px;
 	}
 	margin: 0 auto;
 	.order {
@@ -23,67 +30,83 @@
 		margin-bottom: 20px;
 		font: {
 			family: Cabin, sans-serif;
-			weight: bold;
+			size: 1.2em;
 		}
 	}
 }
 
 .storyBlock {
-	border: 2px solid $gray-darkest;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
 	.newslist {
-		padding: {
-			left: 5px;
-			right: 5px;
-		}
-	}
-	margin-bottom: 20px;
-	display: inline-block;
-	.header {
-		margin-bottom: 5px;
-		text-transform: uppercase;
-		font: {
-			weight: bold;
-		}
-		size: 1.1em;
-		.section {
-			line-height: 200%;
-		}
-		padding-left: 5px;
+		padding-bottom: 20px;
+		border-bottom: 2px dotted $politics-color;
+		.title {
+			text-transform: uppercase;
+			font: {
+				weight: bold;
+				size: 1.1em;
+				family: Cabin, sans-serif;
+			}
+			margin-bottom: 5px;
+		}	
 
-		span {
+		.abstract {
 			text-transform: none;
 			font: {
 				family: Georgia, serif;
 				size: 0.9em;
 				style: italic;
 			}
-			padding: {
-				left: 5px;
-				right: 5px;
+		}
+		}
+
+	margin-bottom: 20px;
+	display: inline-block;
+	.header {
+		margin-bottom: 5px;
+		.title {
+			text-transform: uppercase;
+			font: {
+				weight: bold;
+				size: 1.1em;
+				family: Cabin, sans-serif;
+			}
+			margin-bottom: 5px;
+		}	
+		.section {
+			background-color: black;
+			color: white;
+			text-transform: none;
+			margin-bottom: 20px;
+			size: .7em;
+			text-indent: 5px;
+		}
+		padding-left: 5px;
+
+		.abstract {
+			text-transform: none;
+			font: {
+				family: Georgia, serif;
+				size: 0.9em;
+				style: italic;
 			}
 		}
 	}
 	
 	.content {
 		font: {
-			size: 0.9em;
+			size: 14px;
 			family: Cabin, sans-serif;
 		}
 		padding: {
 			left: 5px;
 			right: 5px;
 		}
-		text-align: justify;
 	}
 }
-
 .finish {
 	margin-bottom: 20px;
 		a {
-			text-decoration: none;
+			text-decoration: underline;
 			color: black;
 			font: {
 				family: Georgia, serif;
@@ -92,4 +115,3 @@
 			}
 		}
 	}
-

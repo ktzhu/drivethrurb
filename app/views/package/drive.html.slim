@@ -1,17 +1,17 @@
 link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'
+link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'
 .colmask
 	#mainNavBar
 		= link_to 'DriveThru', root_path, :rel => 'external'
 	#feed
-		.order The Scoop
+		.order Here's your Scoop! Enjoy!
 		- @articles.each do |article|
 			.storyBlock
 				.header
 					.section = "Today in #{article.section}\n\n\n\n\n"
-					p	
-					p
-					= "#{article.title} → "
-					span = article.abstract
+
+					.title #{article.title}
+					.abstract #{article.abstract}
 				p
 				.content
 					= GuardianContent.truncated_text(GuardianContent.extract_lede( article.url ))

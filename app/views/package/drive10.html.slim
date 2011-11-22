@@ -4,12 +4,14 @@ link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet
 	#mainNavBar
 		= link_to 'DriveThru', root_path, :rel => 'external'
 	#feed	
-		.order The Works
+		.order Here's The Works! Enjoy!
 		.entree Page One Platter:
 
 		- @items[0..10].each do |article|
 			.storyBlock
-				.newslist #{article.title}: #{article.abstract}
+				.newslist 
+					.title #{article.title} 
+					.abstract #{article.abstract}
 				
 		.entree The Meat:
 
