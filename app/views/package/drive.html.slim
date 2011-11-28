@@ -5,10 +5,10 @@ link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet
 		= link_to 'DriveThru', root_path, :rel => 'external'
 	#feed
 		.order Here's your Scoop! Enjoy!
-		- @articles.each do |article|
+		.section = "Today in World\n\n\n\n\n"
+		- @world_articles.each do |article|
 			.storyBlock
 				.header
-					.section = "Today in #{article.section}\n\n\n\n\n"
 
 					.title #{article.title}
 					.abstract #{article.abstract}
@@ -16,5 +16,27 @@ link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet
 				.content
 					= GuardianContent.truncated_text(GuardianContent.extract_lede( article.url ))
 
-		.finish
-			a href="/" Want to place another order?
+		.section = "Today in Business\n\n\n\n\n"
+		- @biz_articles.each do |article|
+			.storyBlock
+				.header
+
+					.title #{article.title}
+					.abstract #{article.abstract}
+				p
+				.content
+					= GuardianContent.truncated_text(GuardianContent.extract_lede( article.url ))
+
+		.section = "Today in Sports\n\n\n\n\n"
+		- @sports_articles.each do |article|
+			.storyBlock
+				.header
+
+					.title #{article.title}
+					.abstract #{article.abstract}
+				p
+				.content
+					= GuardianContent.truncated_text(GuardianContent.extract_lede( article.url ))
+
+		.section
+			a href="/" Place another order?

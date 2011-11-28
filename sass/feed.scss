@@ -35,6 +35,29 @@
 	}
 }
 
+.section {
+	margin: 0 auto;
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 0.7em;
+		font-style: italic;
+	}
+	background: #0c7ac4;
+	color: white;
+	width: 160px;
+	height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-transform: none;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	size: 0.7em;
+	text-indent: 5px;
+}
+
 .storyBlock {
 	.newslist {
 		padding-bottom: 20px;

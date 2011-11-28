@@ -5,7 +5,7 @@ link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet
 		= link_to 'DriveThru', root_path, :rel => 'external'
 	#feed	
 		.order Here's The Works! Enjoy!
-		.entree Page One Platter:
+		.section Page One Platter:
 
 		- @items[0..10].each do |article|
 			.storyBlock
@@ -13,12 +13,14 @@ link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet
 					.title #{article.title} 
 					.abstract #{article.abstract}
 				
-		.entree The Meat:
+		.section The Meat:
 
 		- @articles.each do |article|
-			.header
-				= "#{article.section} | #{article.title}"
-			.content
-				= GuardianContent.extract_lede( article.url )
-	.finish
-		a href="/" Want to place another order?
+			.storyBlock
+				.newslist
+					.title = "#{article.section} | #{article.title}"
+					p
+					.content
+						= GuardianContent.extract_lede( article.url )
+	.section
+		a href="/" Place another order?

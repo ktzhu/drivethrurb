@@ -157,16 +157,41 @@ body {
 }
 
 /* line 38, ../../sass/feed.scss */
+.section {
+  margin: 0 auto;
+  background: #0c7ac4;
+  color: white;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-transform: none;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  size: 0.7em;
+  text-indent: 5px;
+}
+/* line 40, ../../sass/feed.scss */
+.section a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+/* line 61, ../../sass/feed.scss */
 .storyBlock {
   margin-bottom: 20px;
   display: inline-block;
 }
-/* line 39, ../../sass/feed.scss */
+/* line 62, ../../sass/feed.scss */
 .storyBlock .newslist {
   padding-bottom: 20px;
   border-bottom: 2px dotted #001722;
 }
-/* line 42, ../../sass/feed.scss */
+/* line 65, ../../sass/feed.scss */
 .storyBlock .newslist .title {
   text-transform: uppercase;
   font-weight: bold;
@@ -174,19 +199,19 @@ body {
   font-family: Cabin, sans-serif;
   margin-bottom: 5px;
 }
-/* line 52, ../../sass/feed.scss */
+/* line 75, ../../sass/feed.scss */
 .storyBlock .newslist .abstract {
   text-transform: none;
   font-family: Georgia, serif;
   font-size: 0.9em;
   font-style: italic;
 }
-/* line 64, ../../sass/feed.scss */
+/* line 87, ../../sass/feed.scss */
 .storyBlock .header {
   margin-bottom: 5px;
   padding-left: 5px;
 }
-/* line 66, ../../sass/feed.scss */
+/* line 89, ../../sass/feed.scss */
 .storyBlock .header .title {
   text-transform: uppercase;
   font-weight: bold;
@@ -194,7 +219,7 @@ body {
   font-family: Cabin, sans-serif;
   margin-bottom: 5px;
 }
-/* line 75, ../../sass/feed.scss */
+/* line 98, ../../sass/feed.scss */
 .storyBlock .header .section {
   background-color: black;
   color: white;
@@ -203,14 +228,14 @@ body {
   size: .7em;
   text-indent: 5px;
 }
-/* line 85, ../../sass/feed.scss */
+/* line 108, ../../sass/feed.scss */
 .storyBlock .header .abstract {
   text-transform: none;
   font-family: Georgia, serif;
   font-size: 0.9em;
   font-style: italic;
 }
-/* line 95, ../../sass/feed.scss */
+/* line 118, ../../sass/feed.scss */
 .storyBlock .content {
   font-size: 14px;
   font-family: Cabin, sans-serif;
@@ -218,11 +243,11 @@ body {
   padding-right: 5px;
 }
 
-/* line 106, ../../sass/feed.scss */
+/* line 129, ../../sass/feed.scss */
 .finish {
   margin-bottom: 20px;
 }
-/* line 108, ../../sass/feed.scss */
+/* line 131, ../../sass/feed.scss */
 .finish a {
   text-decoration: underline;
   color: black;

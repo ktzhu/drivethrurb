@@ -13,16 +13,22 @@ class PackageController < ApplicationController
 			puts @items.count
 
 			@articles = []
+			@world_articles = []
+			@biz_articles = []
+			@sports_articles = []
 			urls = []
 
 			@items.each do |item|
-			  if (item.item_type == "Article" && (item.section == "World" || item.section == "Business Day" || item.section == "Sports"))
-			    @articles << item
+			  if (item.item_type == "Article" && (item.section == "World"))
+			    @world_articles << item
+				elsif (item.item_type == "Article" && (item.section == "Business Day"))
+					@biz_articles << item
+				elsif (item.item_type == "Article" && (item.section == "Sports"))
+					@sports_articles << item
 				urls << item.url
 			  end
 			  puts "TITLE: #{item.title}\nItem type is #{item.item_type}\nItem section is #{item.section}\nItem abstract is #{item.abstract}\n\n\n\n."
 			end
-			puts @articles.count
 
 			# @news_package = []
 			
