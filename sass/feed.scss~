@@ -1,0 +1,62 @@
+@import "partials/colors";
+@import "home";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font: {
+		family: Arial, sans-serif;
+	}
+	size: 10px;
+}
+
+#feed {
+	width: 50%;
+	margin: 0 auto;
+	.order {
+		font: {
+			family: Georgia, serif;
+			style: italic;
+	}
+}
+
+.storyBlock {
+	display: inline-block;
+	.header {
+		text-transform: uppercase;
+		font: {
+			weight: bold;
+		}
+		size: 1.3em;
+
+		span {
+			font: {
+				family: Georgia, serif;
+				size: 1.1em;
+				style: italic;
+			}
+		}
+	}
+	
+	.content {
+		size: 0.9em;
+	}
+
+	.finish {
+		a {
+			text-decoration: none;
+			color: black;
+			font: {
+				family: Georgia, serif;
+				size: 1.0em;
+				style: italic;
+			}
+		}
+	}
+}
+
+
+}

@@ -1,25 +1,22 @@
-div data-role="page" data-theme="a" id="index"
-link href='http://fonts.googleapis.com/css?family=Sansita+One' rel='stylesheet' type='text/css' 
-link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'
-#mainNavBar 
-	p DriveThru
+link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'
+link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'
+.colmask
+	#mainNavBar
+		= link_to 'DriveThru', root_path, :rel => 'external'
 
-div id="panelTextOne"
-	h1 Minute Menu 
-
-	p What's Happening Right Now: Two Minutes
-
-#panelDividerOne
-
-div id="panelTextTwo"
-	h1 Value Meal
-
-	p Your World in Five Minutes
-
-
-#panelDividerTwo
-
-div id="panelTextThree"
-	h1 Main Entreé
-
-	p Expand Your Mind: Ten Minutes
+	#driveup
+		.greeting Welcome to DriveThru, Connor!
+		p
+		#menu May I take your order?
+		#scoop
+			.choice
+				span = 2 
+				| min.
+				a href="/package/drive" → The Scoop
+			.des A summary of the latest news.
+		#works
+			.choice
+				span = 10
+				| min.
+				a href="/package/drive10" → The Works
+			.des Your complete news digest: world, sports, business, opinion.

@@ -5,6 +5,7 @@ Drivethrurb::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   match 'package/drive' => 'package#drive'
+  match 'package/drive10' => 'package#drive10'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:

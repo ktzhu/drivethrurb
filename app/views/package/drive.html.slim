@@ -1,36 +1,41 @@
-doctype html
-html 
-	head
-		title DriveThru | News Feed
-		script src="/javascripts/feed.js"
-	body
-		div class="navBar" 
-			= link_to 'DriveThru', root_path, :rel => 'external'
+link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'
+link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'
+.colmask
+	#mainNavBar
+		= link_to 'DriveThru', root_path, :rel => 'external'
+	#feed
+		.order Here's your Scoop! Enjoy!
+		.section = "Today in World\n\n\n\n\n"
+		- @world_articles.each do |article|
+			.storyBlock
+				.header
+					.title #{article.title}
+					.abstract #{article.abstract}
+				p
+				.content
+					= GuardianContent.truncated_text(GuardianContent.extract_lede( article.url ))
 
-		div class="Title"
-			h2 Right now in Two Minutes
+		.section = "Today in Business\n\n\n\n\n"
+		- @biz_articles.each do |article|
+			.storyBlock
+				.header
 
-		div id="storyWrapper"
-				div class="storyContent"
-					h4 In World...
-					h2 = @world_titles[0]
-					p
-						= sanitize(@news_package[0])
-					
-				
-				div class="storyContent"
-					h4 In Sport...
-					h2 = @sports_titles[0]
-					p
-						= sanitize(@news_package[1])
-					
-					
-				div class="storyContent"
-					h4 In Business...
-					h2 = @business_titles[0]
-					p
-						= sanitize(@news_package[2])
-					
-					
-				div class="finish"
-						a href="/" Cool, I'm done.
+					.title #{article.title}
+					.abstract #{article.abstract}
+				p
+				.content
+					= GuardianContent.truncated_text(GuardianContent.extract_lede( article.url ))
+
+		.section = "Today in Sports\n\n\n\n\n"
+		- @sports_articles.each do |article|
+			.storyBlock
+				.header
+
+					.title #{article.title}
+					.abstract #{article.abstract}
+				p
+				.content
+					= GuardianContent.truncated_text(GuardianContent.extract_lede( article.url ))
+
+		.section
+			a href="/" Place another order?

@@ -1,0 +1,140 @@
+@import "partials/colors";
+@import "home";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#feed {
+	width: 75%;
+	.entree {
+		font: {
+			weight: bold;
+			family: Cabin, sans-serif;
+			color: $technology-color;
+		}
+		display: block;
+		background-color: black;
+		color: white;
+		text-transform: none;
+		margin-bottom: 20px;
+		size: .7em;
+		text-indent: 5px;
+		margin-bottom: 10px;
+	}
+	margin: 0 auto;
+	.order {
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		font: {
+			family: Cabin, sans-serif;
+			size: 1.2em;
+		}
+	}
+}
+
+.section {
+	margin: 0 auto;
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 0.7em;
+		font-style: italic;
+	}
+	background: #0c7ac4;
+	color: white;
+	width: 160px;
+	height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-transform: none;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	size: 0.7em;
+	text-indent: 5px;
+}
+
+.storyBlock {
+	.newslist {
+		padding-bottom: 20px;
+		border-bottom: 2px dotted $politics-color;
+		.title {
+			text-transform: uppercase;
+			font: {
+				weight: bold;
+				size: 1.1em;
+				family: Cabin, sans-serif;
+			}
+			margin-bottom: 5px;
+		}	
+
+		.abstract {
+			text-transform: none;
+			font: {
+				family: Georgia, serif;
+				size: 0.9em;
+				style: italic;
+			}
+		}
+		}
+
+	margin-bottom: 20px;
+	display: inline-block;
+	.header {
+		margin-bottom: 5px;
+		.title {
+			text-transform: uppercase;
+			font: {
+				weight: bold;
+				size: 1.1em;
+				family: Cabin, sans-serif;
+			}
+			margin-bottom: 5px;
+		}	
+		.section {
+			background-color: black;
+			color: white;
+			text-transform: none;
+			margin-bottom: 20px;
+			size: .7em;
+			text-indent: 5px;
+		}
+		padding-left: 5px;
+
+		.abstract {
+			text-transform: none;
+			font: {
+				family: Georgia, serif;
+				size: 0.9em;
+				style: italic;
+			}
+		}
+	}
+	
+	.content {
+		font: {
+			size: 14px;
+			family: Cabin, sans-serif;
+		}
+		padding: {
+			left: 5px;
+			right: 5px;
+		}
+	}
+}
+.finish {
+	margin-bottom: 20px;
+		a {
+			text-decoration: underline;
+			color: black;
+			font: {
+				family: Georgia, serif;
+				size: 1.0em;
+				style: italic;
+			}
+		}
+	}

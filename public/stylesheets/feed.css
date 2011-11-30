@@ -1,0 +1,257 @@
+/* line 3, ../../sass/home.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 8, ../../sass/home.scss */
+body {
+  font-family: Cabin, sans-serif;
+  size: 10px;
+}
+
+/* line 15, ../../sass/home.scss */
+.colmask {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* line 21, ../../sass/home.scss */
+#mainNavBar {
+  display: block;
+  padding-top: 5px;
+  height: 25px;
+  background: #0c7ac4;
+  font-family: Lobster, cursive;
+  font-size: 1.2em;
+  text-indent: 10px;
+}
+/* line 33, ../../sass/home.scss */
+#mainNavBar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 39, ../../sass/home.scss */
+.greeting {
+  font-family: Cabin, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* line 49, ../../sass/home.scss */
+.choice span {
+  font-family: Lobster, cursive;
+  font-size: 4em;
+  font-color: #001722;
+}
+/* line 56, ../../sass/home.scss */
+.choice a {
+  border-top: 1px solid #96d1f8;
+  background: #0e4b73;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0c7ac4), to(#0e4b73));
+  background: -webkit-linear-gradient(top, #0c7ac4, #0e4b73);
+  background: -moz-linear-gradient(top, #0c7ac4, #0e4b73);
+  background: -ms-linear-gradient(top, #0c7ac4, #0e4b73);
+  background: -o-linear-gradient(top, #0c7ac4, #0e4b73);
+  padding: 5.5px 11px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  -webkit-box-shadow: black 0 1px 0;
+  -moz-box-shadow: black 0 1px 0;
+  box-shadow: black 0 1px 0;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  color: white;
+  font-size: 20px;
+  font-family: Lobster, cursive;
+  text-decoration: none;
+  vertical-align: middle;
+}
+/* line 78, ../../sass/home.scss */
+.choice a:hover {
+  border-top-color: #002c4a;
+  background: #002c4a;
+  color: #ccc;
+}
+
+/* line 85, ../../sass/home.scss */
+.des {
+  size: 1.2em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 92, ../../sass/home.scss */
+#driveup {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+  align: center;
+}
+
+/* line 100, ../../sass/home.scss */
+#menu {
+  text-transform: none;
+  text-align: center;
+  font-family: Cabin, sans-serif;
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* line 111, ../../sass/home.scss */
+#scoop {
+  border-bottom: solid 5px #001722;
+}
+/* line 112, ../../sass/home.scss */
+#scoop a {
+  position: relative;
+  left: 45px;
+  top: -10px;
+}
+
+/* line 121, ../../sass/home.scss */
+#works a {
+  position: relative;
+  left: 20px;
+  top: -10px;
+}
+
+/* line 4, ../../sass/feed.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 9, ../../sass/feed.scss */
+#feed {
+  width: 75%;
+  margin: 0 auto;
+}
+/* line 11, ../../sass/feed.scss */
+#feed .entree {
+  font-weight: bold;
+  font-family: Cabin, sans-serif;
+  font-color: #8f807d;
+  display: block;
+  background-color: black;
+  color: white;
+  text-transform: none;
+  margin-bottom: 20px;
+  size: .7em;
+  text-indent: 5px;
+  margin-bottom: 10px;
+}
+/* line 27, ../../sass/feed.scss */
+#feed .order {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Cabin, sans-serif;
+  font-size: 1.2em;
+}
+
+/* line 38, ../../sass/feed.scss */
+.section {
+  margin: 0 auto;
+  background: #0c7ac4;
+  color: white;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-transform: none;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  size: 0.7em;
+  text-indent: 5px;
+}
+/* line 40, ../../sass/feed.scss */
+.section a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+/* line 61, ../../sass/feed.scss */
+.storyBlock {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+/* line 62, ../../sass/feed.scss */
+.storyBlock .newslist {
+  padding-bottom: 20px;
+  border-bottom: 2px dotted #001722;
+}
+/* line 65, ../../sass/feed.scss */
+.storyBlock .newslist .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: Cabin, sans-serif;
+  margin-bottom: 5px;
+}
+/* line 75, ../../sass/feed.scss */
+.storyBlock .newslist .abstract {
+  text-transform: none;
+  font-family: Georgia, serif;
+  font-size: 0.9em;
+  font-style: italic;
+}
+/* line 87, ../../sass/feed.scss */
+.storyBlock .header {
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+/* line 89, ../../sass/feed.scss */
+.storyBlock .header .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: Cabin, sans-serif;
+  margin-bottom: 5px;
+}
+/* line 98, ../../sass/feed.scss */
+.storyBlock .header .section {
+  background-color: black;
+  color: white;
+  text-transform: none;
+  margin-bottom: 20px;
+  size: .7em;
+  text-indent: 5px;
+}
+/* line 108, ../../sass/feed.scss */
+.storyBlock .header .abstract {
+  text-transform: none;
+  font-family: Georgia, serif;
+  font-size: 0.9em;
+  font-style: italic;
+}
+/* line 118, ../../sass/feed.scss */
+.storyBlock .content {
+  font-size: 14px;
+  font-family: Cabin, sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 129, ../../sass/feed.scss */
+.finish {
+  margin-bottom: 20px;
+}
+/* line 131, ../../sass/feed.scss */
+.finish a {
+  text-decoration: underline;
+  color: black;
+  font-family: Georgia, serif;
+  font-size: 1.0em;
+  font-style: italic;
+}
