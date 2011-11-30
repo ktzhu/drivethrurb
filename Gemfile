@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.7'
+gem 'heroku'
 gem 'jquery-rails'
 gem 'mysql2', '0.2.7'
 gem 'compass', '0.11.3'
