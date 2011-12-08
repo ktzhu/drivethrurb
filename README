@@ -1,3 +1,16 @@
+Installation and setup requirements
+
+1. Download RVM and install Ruby 1.9.2
+2. `use 1.9.2`
+3. `gem install bundler`
+3. Clone this repository
+4. `bundle install` (This will install all gem dependencies for this project)
+5. `rails server` -- To start your local dev server.
+
+Note: Stylesheets are written in Sass, located in the sass directory (under root). Every
+time changes are made to this .scss file, you will need to type `compass compile` at the
+command prompt to re-compile the .css files and see your changes.
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
